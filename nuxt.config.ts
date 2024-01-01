@@ -1,12 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // export default defineNuxtConfig({
 //   devtools: { enabled: true },
-  
+
 // })
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
   //...
-  routeRules:{
+  ssr: false,
+  routeRules: {
   },
   build: {
     transpile: [
